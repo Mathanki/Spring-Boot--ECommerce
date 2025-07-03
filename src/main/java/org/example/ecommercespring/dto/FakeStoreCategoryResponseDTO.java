@@ -4,11 +4,8 @@ import lombok.*;
 
 import java.util.List;
 
-@Getter
-@Setter
+@Data // or just @Getter and @Setter if you only need those
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class FakeStoreCategoryResponseDTO {
     private String status;
 
