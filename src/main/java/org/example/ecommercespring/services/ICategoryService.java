@@ -9,4 +9,6 @@ public interface ICategoryService {
 
     List<CategoryDTO> getAllCategories() throws IOException;
 
+    CategoryDTO createCategory(CategoryDTO categoryDTO);
+
 }

@@ -26,7 +26,8 @@ public class CategoryController {
 
     @PostMapping
     public ResponseEntity<CategoryDTO> createCategory(@RequestBody CategoryDTO categoryDTO) {
-        throw new UnsupportedOperationException("Method not implemented yet");
+        CategoryDTO created = categoryService.createCategory(categoryDTO);
+        return ResponseEntity.ok(created);
     }
 
 }
